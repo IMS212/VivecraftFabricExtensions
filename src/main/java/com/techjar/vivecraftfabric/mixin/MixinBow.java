@@ -39,7 +39,7 @@ public abstract class MixinBow {
         VRPlayerData data = PlayerTracker.getPlayerData(player);
         if (data != null && !data.seated && data.bowDraw > 0) {
             LogHelper.debug("Bow draw: " + data.bowDraw);
-            return Math.round(data.bowDraw * 20);
+            return Math.round(data.bowDraw * 2);
         }
         return i;
     }
