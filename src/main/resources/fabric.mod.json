@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "vivecraftfabricextensions",
+  "version": "${version}",
+
+  "name": "Vivecraft Fabric Extensions",
+  "description": "This allows for Vivecraft-specific features to work on dedicated Fabric servers.",
+  "authors": [
+    "Techjar",
+    "IMS"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "LGPLv3",
+
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "com.techjar.vivecraftfabric.VivecraftFabric"
+    ]
+  },
+  "mixins": [
+    "vivecraftfabricextensions.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18",
+    "java": ">=17",
+    "architectury": ">=4.9.83"
+  }
+}
